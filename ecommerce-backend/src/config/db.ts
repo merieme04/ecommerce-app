@@ -1,8 +1,14 @@
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const connectDB = async () => {
     try {
-        const uri = 'mongodb+srv://ecommerce:1234@cluster0.92vlj.mongodb.net/?retryWrites=true&w=majority';
+        const uri = process.env.MONGODB_URI;
+        if (!uri) {
+            throw new Error('MongoDB URI is missing in .env file');
+        }
         await mongoose.connect(uri);
         console.log('MongoDB Atlas connected successfully!');
     } catch (error) {
