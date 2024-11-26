@@ -28,7 +28,7 @@ Le projet est divisé en deux parties principales :
 ### 1. Clonez le dépôt
 
 ```bash
-git clone https://github.com/votre-utilisateur/ecommerce-app.git
+git clone https://github.com/merieme04/ecommerce-app.git
 cd ecommerce-app
 ```  
 
@@ -76,22 +76,22 @@ VUE_APP_API_URL=http://localhost:3000
 cd ecommerce-backend
 npm run dev
 ```
-Cela démarrera le serveur backend sur le port **'3000'**.
+Cela démarrera le serveur backend sur le port **'5173'**.
 
 ### 2. Démarrer le frontend
 ```bash
 cd ecommerce-frontend
 npm run serve
 ```
-Cela démarrera le serveur de développement frontend sur le port **'8080'**.
+Cela démarrera le serveur de développement frontend sur le port **'5000'**.
 
 
 ## 3. Accéder à l'application
 
 Une fois les deux serveurs démarrés, accédez à l'application dans votre navigateur à l'adresse suivante :
 
-- **Frontend** : [http://localhost:8080](http://localhost:8080)
-- **Backend** : [http://localhost:3000](http://localhost:3000) (API)
+- **Frontend** : [http://localhost:5000](http://localhost:5000)
+- **Backend** : [http://localhost:5173](http://localhost:5173) (API)
 
 ## Déploiement
 
